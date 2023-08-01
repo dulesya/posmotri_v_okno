@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -44,10 +44,8 @@ ol {
 }
 /* main code*/
 
-
 .content {
-
-width: 100%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   gap: 30px;
@@ -56,21 +54,21 @@ width: 100%;
 
 .result {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   width: 711px;
   min-height: 456px;
 }
 .result__video-container {
   height: 386px;
   width: 711px;
+  position: relative;
 }
 .result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  position: relative;
 }
 .content__video-card {
   display: flex;
@@ -79,13 +77,13 @@ align-items: flex-start;
   justify-content: space-between;
 }
 .content__video-card-thumbnail {
-  width: 194px;
+  min-width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
 }
 .content__video-card-title {
-  color: #FFF;
+  color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -98,7 +96,7 @@ align-items: flex-start;
   width: 100%;
 }
 .content__video-card-description {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -106,16 +104,15 @@ align-items: flex-start;
 }
 .content__details {
   display: flex;
-flex-direction: column;
-justify-content: space-between;
-inline-size: 100%;
-gap: 26px;
+  flex-direction: column;
+  justify-content: space-between;
+  inline-size: 100%;
+  gap: 26px;
 }
 
 .content__list {
   overflow-y: auto;
-max-height: 298px;
-
+  max-height: 298px;
 }
 .content__list-item {
   width: 100%;
@@ -127,7 +124,7 @@ max-height: 298px;
 }
 
 .content__card-link {
-  color: #FFF;
+  color: #fff;
   display: block;
   text-decoration: none;
   cursor: pointer;
@@ -138,8 +135,8 @@ max-height: 298px;
   outline: none;
 }
 .content__card-link:focus-visible {
-outline: 1px solid #fffafa;
-outline-offset:  -1px;
+  outline: 1px solid #fffafa;
+  outline-offset: -1px;
 }
 .content__card-link:active {
   background-color: #545050;
@@ -152,30 +149,28 @@ outline-offset:  -1px;
   color: #545050;
 }
 .title {
-  color: #FFF;
+  color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
-font-weight: 700;
-line-height: 94%;
-text-transform: uppercase;
-
+  font-weight: 700;
+  line-height: 0.94;
+  text-transform: uppercase;
 }
 .search-form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 711px;
-height: 54px;
-gap: 40px;
-margin-top: 16px;
+  gap: 40px;
+  margin-top: 16px;
 }
 
 .search-form__fieldset {
   display: inline-flex;
-flex-direction: column;
-align-items: flex-start;
-border: none;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
 }
 .search-form__fieldset-text {
   display: flex;
@@ -185,7 +180,7 @@ border: none;
   cursor: pointer;
 }
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -193,30 +188,28 @@ border: none;
   margin-bottom: 5px;
 }
 
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
 }
 
-
 .search-form__submit-button {
-  color: #FFF;
-text-align: center;
-font-family: 'Fira Sans Condensed', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #fff;
+  text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   padding: 6px 73.5px;
 }
 .search-form__label-text {
-  color: #FFF;
-font-family: 'Fira Sans Condensed';
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .search-form__label {
   display: flex;
@@ -224,22 +217,33 @@ line-height: normal;
   gap: 5px;
   width: fit-content;
   cursor: pointer;
+  border: none;
+}
+.search-form__label:hover {
+  cursor: pointer;
 }
 
+.search-form__label:focus {
+  outline: none;
+}
 
+.search-form__label:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
 .search-form__textfield {
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
   border: none;
-  border-block-start: 1px solid #FFF;
-  border-block-end: 1px solid #FFF;
+  border-block-start: 1px solid #fff;
+  border-block-end: 1px solid #fff;
   color: currentColor;
   background-color: transparent;
   min-inline-size: 225px;
   appearance: none;
-  font-family: 'Fira Sans Condensed';
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -247,28 +251,30 @@ line-height: normal;
 .search-form__textfield:focus {
   outline: none;
 }
+.search-form__fieldset-text:hover {
+  text-decoration: underline;
+}
 .search-form__textfield:not(:placeholder-shown) {
   border: 1px solid white;
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 17px;
   height: 17px;
-  outline: 1px solid #fff;
+ outline: 1px solid #fff;
   position: relative;
-
 }
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-  content: '';
+  content: "";
   display: block;
   inset: 0;
   margin: auto;
   width: 15px;
   height: 15px;
   background: #fff;
-
 }
 .visually-hidden {
   position: absolute;
@@ -280,17 +286,15 @@ line-height: normal;
   white-space: nowrap;
 }
 .button {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
   background: transparent;
-  border: 1px solid #FFF;
-  color: #FFF;
-  text-transform: uppercase;
+  border: 1px solid #fff;
+  color: #fff;
   line-height: normal;
-
 }
 
 .button:active {
