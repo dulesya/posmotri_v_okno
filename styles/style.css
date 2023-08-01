@@ -251,7 +251,7 @@ ol {
 .search-form__textfield:focus {
   outline: none;
 }
-.search-form__fieldset-text:hover {
+.search-form__label-text:hover {
   text-decoration: underline;
 }
 .search-form__textfield:not(:placeholder-shown) {
